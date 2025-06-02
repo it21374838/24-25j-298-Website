@@ -9,7 +9,7 @@ const AboutUs = () => {
     {
       name: "Mr. Uditha Dharmakeerthi",
       role: "Supervisor",
-      image: "images/supervisor.jpg",
+      image: "public/images/supervisor.jpg",
     },
     {
       name: "Mr. Amila Senarathne",
