@@ -21,25 +21,25 @@ const AboutUs = () => {
     {
       name: "Ellewela A.V.H",
       role: "IT21361272",
-      image: "/images/adi.jpg",
+      image: "images/adi.jpg",
       bio: "Team leader"
     },
     {
       name: "Rathnayaka K.P.Y.N",
       role: "IT21031748",
-      image: "/images/yasasi.jpg",
+      image: "images/yasasi.jpg",
       bio: "Team Member"
     },
     {
       name: "Dissanayake D.T.D",
       role: "IT21165948",
-      image: "/images/diwya.jpg",
+      image: "images/diwya.jpg",
       bio: "Team Member"
     },
     {
       name: "Silva K.H.L.D",
       role: "IT21374838",
-      image: "/images/linal.jpg",
+      image: "images/linal.jpg",
       bio:"Team Member"
     }
   ];
