@@ -20,20 +20,20 @@ const Documents = () => {
 
   // Main documents list
   const documents = [
-    { title: "TAF", id: "charter", fileUrl: "/documents/TAF_298.pdf" },
+    { title: "TAF", id: "charter", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/TAF_298.pdf" },
     { 
       title: "Proposal Document", 
       id: "proposal", 
-      fileUrl: "/documents/proposal-document.pdf",
+      fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/proposal-document.pdf",
       isExpandable: true,
       hideDownload: true // Added this property to hide download button
     },
-    { title: "Status Document - 1", id: "status1", fileUrl: "/documents/" },
-    { title: "Status Document - 2", id: "status2", fileUrl: "/documents/" },
+    { title: "Status Document - 1", id: "status1", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/" },
+    { title: "Status Document - 2", id: "status2", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/" },
     {
       title: "Final Report",
       id: "finalReport",
-      fileUrl: "/documents/final-report.pdf",
+      fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/final-report.pdf",
       isExpandable: true,
       hideDownload: true // Added this property to hide download button
     }
@@ -41,18 +41,18 @@ const Documents = () => {
 
   // Proposal documents that will be shown when expanded
   const proposalDocs = [
-    { title: "IT21361272", fileUrl: "/documents/IT21361272.pdf", icon: "FileText" },
-    { title: "IT21031748", fileUrl: "/documents/IT21031748.pdf", icon: "FileText" },
-    { title: "IT21165948", fileUrl: "/documents/IT21165948.pdf", icon: "FileText" },
-    { title: "IT21374838", fileUrl: "/documents/IT21374838.pdf", icon: "FileText" }
+    { title: "IT21361272", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/IT21361272.pdf", icon: "FileText" },
+    { title: "IT21031748", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/IT21031748.pdf", icon: "FileText" },
+    { title: "IT21165948", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/IT21165948.pdf", icon: "FileText" },
+    { title: "IT21374838", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/IT21374838.pdf", icon: "FileText" }
   ];
 
   // Final report documents that will be shown when expanded
   const finalReportDocs = [
-    { title: "IT21361272", fileUrl: "/documents/24-25J-298- IT21361272-Individual Report.pdf", icon: "FileText" },
-    { title: "IT21031748", fileUrl: "/documents/24-25J-298- IT21031748-Individual Report.pdf", icon: "FileText" },
-    { title: "IT21165948", fileUrl: "/documents/24-25j-298 - IT21165948- Individual Report.pdf", icon: "FileText" },
-    { title: "IT21374838", fileUrl: "/documents/24-25J-298- IT21374838-Individual Report.pdf", icon: "FileText" }
+    { title: "IT21361272", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/24-25J-298- IT21361272-Individual Report.pdf", icon: "FileText" },
+    { title: "IT21031748", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/24-25J-298- IT21031748-Individual Report.pdf", icon: "FileText" },
+    { title: "IT21165948", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/24-25j-298 - IT21165948- Individual Report.pdf", icon: "FileText" },
+    { title: "IT21374838", fileUrl: "https://it21374838.github.io/24-25j-298-Website/documents/24-25J-298- IT21374838-Individual Report.pdf", icon: "FileText" }
   ];
 
   
