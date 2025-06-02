@@ -1,0 +1,192 @@
+/* Documents Section */
+.documents-section {
+  padding: var(--section-padding);
+  background: #0B1E39; /* Change the background color to #33415c */
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #28313d;
+  border-radius: 25px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--border-light);
+}
+
+.document-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(5px);
+}
+
+.document-title {
+  font-weight: 600;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--dark-blue);
+  color: white;
+  background-color: #8a8984;
+  border-color: #8a8984;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.download-button:hover {
+  background: var(--yellow);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* New CSS for proposal files */
+.proposal-files-container {
+  background: var(--background-light);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+}
+
+.proposal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.proposal-header h3 {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.proposal-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.download-all-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--dark-blue);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.download-all-button:hover {
+  background: #204b8c;
+  transform: translateY(-2px);
+}
+
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--border-light);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.close-button:hover {
+  background: var(--background-gray);
+  color: var(--text-dark);
+}
+
+.proposal-files-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.proposal-file-card {
+  background: white;
+  border-color: var(--dark-blue);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all var(--transition-normal);
+  border: 1px solid var(--border-light);
+}
+
+.proposal-file-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.proposal-file-icon {
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+.proposal-file-title {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.proposal-file-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--dark-blue);
+  color: white;
+  border: 1px solid var(--dark-blue);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.proposal-file-button:hover {
+  background: var(--dark-blue);
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .proposal-files-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .proposal-files-grid {
+    grid-template-columns: 1fr;
+  }
+}

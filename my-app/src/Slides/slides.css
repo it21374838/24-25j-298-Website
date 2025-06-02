@@ -1,0 +1,144 @@
+/* Slides Section Styling */
+.slides-section {
+  padding: 5rem 0;
+  background-color: #0B1E39;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.section-divider {
+  width: 6rem;
+  height: 4px;
+  background-color: #0d2a5a; /* Dark blue */
+  margin: 0 auto;
+}
+
+/* Slides Row Layout - Ensuring all 4 cards stay in one row */
+.slides-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  background-color: #0B1E39;
+}
+
+/* Slide Card Styling */
+.slide-card {
+  flex: 1;
+  min-width: 0; /* Allows cards to shrink if needed */
+  background-color: #c4c1c1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.slide-card:nth-child(1) { animation-delay: 0.1s; }
+.slide-card:nth-child(2) { animation-delay: 0.2s; }
+.slide-card:nth-child(3) { animation-delay: 0.3s; }
+.slide-card:nth-child(4) { animation-delay: 0.4s; }
+
+.slide-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slide-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.slide-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(13, 42, 90, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #0d2a5a; /* Dark blue */
+}
+
+.slide-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slide-type {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+/* Download Button Styling */
+.download-button-1 {
+  background-color:#8a8984; /* Dark blue */
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button-1:hover {
+  background-color: #242a35; /* Darker blue on hover */
+}
+
+.button-icon {
+  margin-right: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Preserving the single row layout as much as possible */
+@media (max-width: 992px) {
+  .slides-row {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .slide-card {
+    min-width: 220px; /* Minimum width to maintain readability */
+  }
+}
