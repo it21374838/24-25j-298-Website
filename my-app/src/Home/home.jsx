@@ -96,8 +96,8 @@ const Home = () => {
           <div className="hero-image-wrapper">
             <div className="hero-image-container">
               <img
-                src="/images/backgrounds.png"
-                alt="Child with Down syndrome using technology"
+                src="https://it21374838.github.io/24-25j-298-Website/images/backgrounds.png"
+                alt="logo"
                 className="hero-image"
               />
               <div className="image-decoration"></div>
