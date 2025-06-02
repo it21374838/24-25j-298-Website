@@ -21,7 +21,7 @@ const AboutUs = () => {
     {
       name: "Ellewela A.V.H",
       role: "IT21361272",
-      image: "images/adi.jpg",
+      image: "./images/adi.jpg",
       bio: "Team leader"
     },
     {
